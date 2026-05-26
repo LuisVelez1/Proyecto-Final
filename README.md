@@ -1,5 +1,9 @@
 # ParkUQ — Sistema de Gestión de Parqueadero
 ### Universidad del Quindío
+#### Proyecto desarrollado por:
+* Luis Eduardo Vélez Posada
+* Daniel Felipe Monsalve Montalvo
+* Johan Stiven Gomez
 
 ---
 
