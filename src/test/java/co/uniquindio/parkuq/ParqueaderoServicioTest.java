@@ -57,7 +57,7 @@ public class ParqueaderoServicioTest {
     @DisplayName("Registrar ingreso de carro exitosamente")
     void testRegistrarIngresoExitoso() {
         assertDoesNotThrow(() -> {
-            Vehiculo v = servicio.registrarIngreso("ABC123", TipoVehiculo.CARRO, "Juan Perez", "123456");
+            Vehiculo v = servicio.registrarIngreso("ABC123", TipoVehiculo.CARRO, "Luis Velez", "123456");
             assertNotNull(v);
             assertEquals("ABC123", v.getPlaca());
             assertEquals(EstadoVehiculo.DENTRO, v.getEstado());
@@ -110,12 +110,12 @@ public class ParqueaderoServicioTest {
     @DisplayName("No se puede ingresar si no hay espacios disponibles del tipo")
     void testSinEspaciosDisponibles() {
         assertDoesNotThrow(() -> {
-            servicio.registrarIngreso("BIC001", TipoVehiculo.BICICLETA, "Ana", "111");
+            servicio.registrarIngreso("BIC001", TipoVehiculo.BICICLETA, "Daniel", "111");
             servicio.registrarIngreso("BIC002", TipoVehiculo.BICICLETA, "Luis", "222");
         });
 
         assertThrows(SinEspaciosDisponiblesException.class, () -> {
-            servicio.registrarIngreso("BIC003", TipoVehiculo.BICICLETA, "Maria", "333");
+            servicio.registrarIngreso("BIC003", TipoVehiculo.BICICLETA, "Johan", "333");
         });
     }
 
@@ -180,7 +180,7 @@ public class ParqueaderoServicioTest {
     @DisplayName("Registrar usuario autorizado exitosamente")
     void testRegistrarUsuario() {
         assertDoesNotThrow(() -> {
-            servicio.registrarUsuario("Carlos Lopez", "555555", TipoUsuario.DOCENTE);
+            servicio.registrarUsuario("Daniel Monsalve", "555555", TipoUsuario.DOCENTE);
         });
         assertEquals(1, servicio.getUsuarios().size());
     }
