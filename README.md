@@ -1,4 +1,4 @@
-# 🅿️ ParkUQ — Sistema de Gestión de Parqueadero
+# ParkUQ — Sistema de Gestión de Parqueadero
 ### Universidad del Quindío
 
 ---
@@ -225,14 +225,11 @@ classDiagram
     AdminVista --> ParqueaderoServicio : consume
     Main ..> LoginVista : inicializa
 ```
-
-> 💡 **Tip:** GitHub renderiza automáticamente los bloques `mermaid` en el README. Si necesitas una imagen PNG o PDF del diagrama, puedes generarla en [mermaid.live](https://mermaid.live) pegando el código anterior.
-
 ---
 
 ## 3. Repositorio / Control de Versiones
 
-> 🔗 **[Enlace al repositorio — agregar aquí]**
+> https://github.com/LuisVelez1/Proyecto-Final
 
 ---
 
@@ -336,7 +333,7 @@ mvn javafx:run
 mvn test
 
 # Compilar
-mvn compile
+mvn compile 
 ```
 
 ---
