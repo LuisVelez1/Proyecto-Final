@@ -42,7 +42,7 @@ public class OperadorVista {
         form.setVgap(12);
         form.setPadding(new Insets(20));
         form.setMaxWidth(500);
-        form.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+        form.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10;");
 
         TextField txtPlaca = crearTextField("Ej: ABC123");
         TextField txtNombre = crearTextField("Nombre del conductor");
@@ -51,7 +51,7 @@ public class OperadorVista {
                 FXCollections.observableArrayList(TipoVehiculo.values()));
         cbTipo.setPromptText("Seleccione tipo");
         cbTipo.setMaxWidth(Double.MAX_VALUE);
-        cbTipo.setStyle("-fx-background-color: #54c759; -fx-text-fill: white;");
+        cbTipo.setStyle("-fx-background-color: #328fe6; -fx-text-fill: white;");
 
         form.add(crearLabel("Placa:"), 0, 0);
         form.add(txtPlaca, 1, 0);
@@ -104,7 +104,7 @@ public class OperadorVista {
         VBox formBox = new VBox(12);
         formBox.setPadding(new Insets(20));
         formBox.setMaxWidth(450);
-        formBox.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+        formBox.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10;");
 
         HBox filaPlaca = new HBox(10);
         filaPlaca.setAlignment(Pos.CENTER_LEFT);
@@ -114,7 +114,7 @@ public class OperadorVista {
         filaPlaca.getChildren().addAll(crearLabel("Placa:"), txtPlaca, btnBuscar);
 
         VBox infoVehiculo = new VBox(5);
-        infoVehiculo.setStyle("-fx-background-color: #3f9343; -fx-padding: 10; -fx-background-radius: 6;");
+        infoVehiculo.setStyle("-fx-background-color: #2196f3; -fx-padding: 10; -fx-background-radius: 6;");
         infoVehiculo.setVisible(false);
 
         Label lblInfoPlaca = crearLabel("");
@@ -284,7 +284,7 @@ public class OperadorVista {
 
         VBox reporteBox = new VBox(10);
         reporteBox.setPadding(new Insets(20));
-        reporteBox.setStyle("-fx-background-color: #3f9343; -fx-background-radius: 10;");
+        reporteBox.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10;");
         reporteBox.setMaxWidth(500);
 
         reporteBox.getChildren().addAll(
@@ -340,11 +340,11 @@ public class OperadorVista {
         HBox fila = new HBox(15);
         fila.setAlignment(Pos.CENTER_LEFT);
         Label lbl = new Label(etiqueta);
-        lbl.setTextFill(Color.web("#a8b2d8"));
+        lbl.setTextFill(Color.web("#ffffff"));
         lbl.setMinWidth(280);
         Label val = new Label(valor);
         val.setFont(Font.font("Arial", FontWeight.BOLD, 14));
-        val.setTextFill(Color.web("#e94560"));
+        val.setTextFill(Color.web("#ffffff"));
         fila.getChildren().addAll(lbl, val);
         return fila;
     }
@@ -359,21 +359,21 @@ public class OperadorVista {
 
     private Label crearLabel(String texto) {
         Label lbl = new Label(texto);
-        lbl.setTextFill(Color.web("#54c759"));
+        lbl.setTextFill(Color.web("#ffffff"));
         return lbl;
     }
 
     private TextField crearTextField(String prompt) {
         TextField tf = new TextField();
         tf.setPromptText(prompt);
-        tf.setStyle("-fx-background-color: #4caf50; -fx-text-fill: white; " +
+        tf.setStyle("-fx-background-color: #000000; -fx-text-fill: white; " +
                 "-fx-prompt-text-fill: #ffffff; -fx-padding: 7; -fx-background-radius: 5;");
         return tf;
     }
 
     private Button crearBoton(String texto, String color) {
         Button btn = new Button(texto);
-        btn.setStyle("-fx-background-color: #58ca5d" + color + "; -fx-text-fill: white; " +
+        btn.setStyle("-fx-background-color: #2196f3" + color + "; -fx-text-fill: white; " +
                 "-fx-padding: 8 18; -fx-background-radius: 5; -fx-cursor: hand;");
         return btn;
     }

@@ -35,7 +35,7 @@ public class AdminVista {
         VBox formBox = new VBox(10);
         formBox.setPadding(new Insets(15));
         formBox.setMaxWidth(450);
-        formBox.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+        formBox.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10;");
 
         Label lblNuevo = new Label("Registrar nuevo espacio");
         lblNuevo.setFont(Font.font("Arial", FontWeight.BOLD, 13));
@@ -48,7 +48,7 @@ public class AdminVista {
         TextField txtCodigo = crearTextField("Ej: C-06");
         ComboBox<TipoVehiculo> cbTipo = new ComboBox<>(FXCollections.observableArrayList(TipoVehiculo.values()));
         cbTipo.setPromptText("Tipo de espacio");
-        cbTipo.setStyle("-fx-background-color: #ffffff;");
+        cbTipo.setStyle("-fx-background-color: #2196f3;");
         cbTipo.setMaxWidth(Double.MAX_VALUE);
 
         form.add(crearLabel("Código:"), 0, 0);
@@ -95,7 +95,7 @@ public class AdminVista {
         ComboBox<EstadoEspacio> cbEstado = new ComboBox<>(
                 FXCollections.observableArrayList(EstadoEspacio.values()));
         cbEstado.setPromptText("Nuevo estado");
-        cbEstado.setStyle("-fx-background-color: #ffffff;");
+        cbEstado.setStyle("-fx-background-color: #2196f3;");
         Button btnCambiar = crearBoton("Cambiar", "#ff9800");
 
         Label lblMsgEstado = new Label();
@@ -164,7 +164,7 @@ public class AdminVista {
         VBox formBox = new VBox(12);
         formBox.setPadding(new Insets(20));
         formBox.setMaxWidth(420);
-        formBox.setStyle("-fx-background-color: #ffffff; -fx-background-radius: 10;");
+        formBox.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10;");
 
         GridPane form = new GridPane();
         form.setHgap(12);
@@ -172,7 +172,7 @@ public class AdminVista {
 
         ComboBox<TipoVehiculo> cbTipo = new ComboBox<>(FXCollections.observableArrayList(TipoVehiculo.values()));
         cbTipo.setPromptText("Tipo vehículo");
-        cbTipo.setStyle("-fx-background-color: #ffffff;");
+        cbTipo.setStyle("-fx-background-color: #2196f3;");
         cbTipo.setMaxWidth(Double.MAX_VALUE);
 
         TextField txtValor = crearTextField("Valor por hora ($)");
@@ -246,7 +246,7 @@ public class AdminVista {
         VBox formBox = new VBox(10);
         formBox.setPadding(new Insets(15));
         formBox.setMaxWidth(450);
-        formBox.setStyle("-fx-background-color: #ffffff ; -fx-background-radius: 10;");
+        formBox.setStyle("-fx-background-color: #2c0478 ; -fx-background-radius: 10;");
 
         GridPane form = new GridPane();
         form.setHgap(10);
@@ -257,7 +257,7 @@ public class AdminVista {
         ComboBox<TipoUsuario> cbTipo = new ComboBox<>(
                 FXCollections.observableArrayList(TipoUsuario.values()));
         cbTipo.setPromptText("Tipo de usuario");
-        cbTipo.setStyle("-fx-background-color: #ffffff;");
+        cbTipo.setStyle("-fx-background-color: #2196f3;");
         cbTipo.setMaxWidth(Double.MAX_VALUE);
 
         form.add(crearLabel("Nombre:"), 0, 0);
@@ -297,7 +297,7 @@ public class AdminVista {
 
         Label descuentoInfo = new Label(
                 "ℹ Descuentos automáticos: Estudiante 10% | Docente 20% | Administrativo 15%");
-        descuentoInfo.setTextFill(Color.web("#5a6a8a"));
+        descuentoInfo.setTextFill(Color.web("#ffffff"));
         descuentoInfo.setFont(Font.font("Arial", 11));
         descuentoInfo.setWrapText(true);
 
@@ -338,21 +338,21 @@ public class AdminVista {
 
     private Label crearLabel(String texto) {
         Label lbl = new Label(texto);
-        lbl.setTextFill(Color.web("#4caf50"));
+        lbl.setTextFill(Color.web("#ffffff"));
         return lbl;
     }
 
     private TextField crearTextField(String prompt) {
         TextField tf = new TextField();
         tf.setPromptText(prompt);
-        tf.setStyle("-fx-background-color: #4caf50; -fx-text-fill: white; " +
+        tf.setStyle("-fx-background-color: #000000; -fx-text-fill: white; " +
                 "-fx-prompt-text-fill: #ffffff; -fx-padding: 5; -fx-background-radius: 5;");
         return tf;
     }
 
     private Button crearBoton(String texto, String color) {
         Button btn = new Button(texto);
-        btn.setStyle("-fx-background-color: #4caf50" + color + "; -fx-text-fill: white; " +
+        btn.setStyle("-fx-background-color: #2196f3" + color + "; -fx-text-fill: white; " +
                 "-fx-padding: 8 18; -fx-background-radius: 5; -fx-cursor: hand;");
         return btn;
     }

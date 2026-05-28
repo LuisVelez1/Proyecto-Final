@@ -31,7 +31,7 @@ LoginVista {
         VBox root = new VBox(15);
         root.setAlignment(Pos.CENTER);
         root.setPadding(new Insets(40));
-        root.setStyle("-fx-background-color: #4caf50;");
+        root.setStyle("-fx-background-color: #072354;");
 
         Label titulo = new Label("PARKUQ");
         titulo.setFont(Font.font("Arial", FontWeight.BOLD, 32));
@@ -43,7 +43,7 @@ LoginVista {
 
         VBox formBox = new VBox(10);
         formBox.setMaxWidth(320);
-        formBox.setStyle("-fx-background-color: #173f21; -fx-padding: 25; -fx-background-radius: 10;");
+        formBox.setStyle("-fx-background-color: #014d6e; -fx-padding: 25; -fx-background-radius: 10;");
 
         Label lblUsuario = new Label("Usuario");
         lblUsuario.setTextFill(Color.web("#ffffff"));

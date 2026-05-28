@@ -29,14 +29,14 @@ public class PrincipalVista {
 
     public void mostrar() {
         root = new BorderPane();
-        root.setStyle("-fx-background-color: #4caf50;");
+        root.setStyle("-fx-background-color: #054a99;");
 
         root.setTop(crearEncabezado());
         root.setLeft(crearMenuLateral());
 
         contenidoCentral = new VBox(20);
         contenidoCentral.setPadding(new Insets(30));
-        contenidoCentral.setStyle("-fx-background-color: #4caf50;");
+        contenidoCentral.setStyle("-fx-background-color: #000000;");
         mostrarBienvenida();
         root.setCenter(contenidoCentral);
 
@@ -51,7 +51,7 @@ public class PrincipalVista {
         HBox header = new HBox();
         header.setAlignment(Pos.CENTER_LEFT);
         header.setPadding(new Insets(15, 25, 15, 25));
-        header.setStyle("-fx-background-color: #4caf50; -fx-border-color: #ffffff; -fx-border-width: 0 0 2 0;");
+        header.setStyle("-fx-background-color: #065196; -fx-border-color: #ffffff; -fx-border-width: 0 0 2 0;");
 
         Label titulo = new Label("PARKUQ");
         titulo.setFont(Font.font("Arial", FontWeight.BOLD, 22));
@@ -79,7 +79,7 @@ public class PrincipalVista {
         VBox menu = new VBox(5);
         menu.setPadding(new Insets(20, 10, 20, 10));
         menu.setPrefWidth(200);
-        menu.setStyle("-fx-background-color: #4caf50");
+        menu.setStyle("-fx-background-color: #065196;");
 
         Label lblOperador = crearLabelSeccion("OPERADOR");
         menu.getChildren().add(lblOperador);
@@ -181,7 +181,7 @@ public class PrincipalVista {
         VBox tarjeta = new VBox(5);
         tarjeta.setPadding(new Insets(20));
         tarjeta.setMinWidth(180);
-        tarjeta.setStyle("-fx-background-color: #00a635; -fx-background-radius: 10; " +
+        tarjeta.setStyle("-fx-background-color: #2c0478; -fx-background-radius: 10; " +
                 "-fx-border-color: #ffffff" + color + "; -fx-border-width: 0 0 0 4; -fx-border-radius: 0 0 0 10;");
 
         Label lblTitulo = new Label(titulo);
